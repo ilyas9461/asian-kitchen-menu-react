@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f8;
+  font-family: "Zilla Slab", serif;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: white;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 15vh;
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #ff6a23;
+  box-shadow: 15px 15px 1px 1px rgba(0, 0, 255, .2);
 }
 
-.App-link {
-  color: #61dafb;
+.logo-container {
+  flex: 1;
+  height: 15vh;
+  border: 2px solid orange;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo {
+  margin-top: 3%;
+  height: 75%;
+  width: 75%;
+  object-fit: contain;
+}
+
+.title-container {
+  flex: 3;
+  height: 15vh;
+  border: 2px solid orange;
+  align-items: center;
+}
+
+.title {
+  margin: 0px;
+  padding: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  background-color: white;
+  margin-top: 20px;
+  box-shadow: 15px 15px 1px 1px rgba(0, 0, 255, .2);
+  padding: 10px;
+
+}
+
+.button-items {
+  margin-right: 10px;
+  font-family: "Zilla Slab", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ff6a23;
+  cursor: pointer;
+}
+.button-items:hover{
+  background-color: whitesmoke;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+
+}
+
+.menu-items {
+  display: flex;
+  flex: 1;
+  margin: 20px 20px;
+}
+
+.photo {
+  width: 30%;
+  height: 80%;
+  object-fit: cover;
+  border: 0.25rem solid black;
+  border-radius: 10px;
+}
+
+.menu-info {
+  margin-left: 20px;
+  width: 100%;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+
+.menu-text {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+
+  .App-header {
+    flex-direction: column;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 255, .2);
+    background: white;
+    height: 10vh;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title-container {
+    font-size: 2rem;
+    width: 100%;
   }
+
+  .logo-container {
+    display: none;
+   }
+
+  .buttons-container {
+    flex-direction: column;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-items {
+    margin-bottom: 5px;
+    font-size: 1.2rem;  
+    width: 50%;
+   
+  }
+ 
+  .menu-container {
+    flex-direction: column;
+  }
+
+  .menu-items {
+    margin-bottom: 10px;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .title-container {
+    font-size: 1.1rem;
+  }
+
+
 }
