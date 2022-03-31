@@ -71,5 +71,30 @@ export const menu = [
         img: "https://www.justonecookbook.com/wp-content/uploads/2011/10/Dorayaki-New-500x400.jpg",
         desc: `Red bean paste dessert, serving with honey.`,
     },
+    {
+        id:10 ,
+        title: "Menemen",
+        category: "Turkey",
+        price: 3.99,
+        img: "https://image.shutterstock.com/image-photo/traditional-turkish-food-menemen-made-260nw-1306098544.jpg",
+        desc: `Tomato, pepper, onion and egg mix is the best dish.`,
+    },
+    {
+        id:11 ,
+        title: "Kuru Fasulye",
+        category: "Turkey",
+        price: 1.99,
+        img: "https://im.haberturk.com/2020/04/21/ver1587444948/2652945_810x458.jpg",
+        desc: `Dry beans are everyone's food.`,
+    },
+    {
+        id:12 ,
+        title: "Patlıcan Kebap",
+        category: "Turkey",
+        price: 1.99,
+        img: "https://i4.hurimg.com/i/hurriyet/75/750x422/5cfe4af3c03c0e2740904345.jpg",
+        desc: `The most beautiful meeting of eggplant and meat`,
+    },
+    
 ];
 
