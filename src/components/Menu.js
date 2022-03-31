@@ -2,33 +2,20 @@ import React from "react";
 import "../App.css";
 import logo from "../assets/images/menu-icon.png";
 
-const Menu = () => {
+const Menu = (props) => {
   return (
-    <div className="menu-container">
-      <div className="menu-items">
-        <img
-          src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg"
-          alt=""
-          className="photo"
-        />
-        <div class="menu-info">
-          <div class="menu-title"> title</div>
-          <div class="price">10.99 </div>
-          <div class="menu-text">Description </div>
-        </div>
-      </div>
-      <div className="menu-items">
-        <img
-          src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg"
-          alt=""
-          className="photo"
-        />
-        <div class="menu-info">
-          <div class="menu-title"> title</div>
-          <div class="price">10.99 </div>
-          <div class="menu-text">Description </div>
-        </div>
-      </div>
+    <div className="grid grid-1-2 md-grid-full">
+      {props.items.map((item) => {
+        return (
+          <div className="grid-cell">            
+            <img src={item.img} alt={item.title} className="photo" />
+            <div class="menu-info">
+              <div class="menu-title">{item.title} <span className="menu-price">{item.price}</span> </div> 
+              <div class="menu-text">{item.desc} </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
